@@ -1,0 +1,124 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image:url("../photos/home33.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: inherit;
+  padding: 20px;
+  font-family: Arial;
+}
+header,
+ header > #info,
+ header > #inform {
+  float: left;
+}
+img{
+  max-width: 300px;
+  max-height: 200px;
+  border: 1px double;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+ 
+.abt-me {
+  background-color: inherit;
+  text-align: center;
+}
+
+/* Center website */
+.main {
+  margin: 0;
+  padding: 0;
+}
+
+ h1{
+  font-family: Pacifico, sans-serif, 'Times New Roman';
+  text-align: center;
+  font-size: 60px;
+  word-break: break-all
+
+}
+
+#profil{
+  border-radius: 50%;
+}
+#ime-profila {
+  font-style: oblique;
+  font-size: 40px;
+  font-weight: bolder;
+}
+#paragr-profila {
+  text-align: center;
+  font-size: 30px;
+  font-family: Pacifico, sans-serif, 'Times New Roman';
+}
+
+.row {
+  margin: 8px -16px;
+  float: left;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+  float: left;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  width: 40%;
+  margin-left: 60px;
+  margin-bottom: 60px;
+  float: left;
+  
+  
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: transparent;
+  padding: 10px;
+  height: 400px;
+  overflow: scroll;
+  border: dotted 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+.content-idProfil{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.column:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  background-color: beige;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
